@@ -1,0 +1,246 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-left {
+    position: absolute;
+    left: 5em;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-left a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+.nav-left a:hover {
+    font-weight: bold;
+}
+
+.nav-right {
+    position: absolute;
+    right: 5em;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-right a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+.nav-right a:hover {
+    font-weight: bold;
+}
+
+.about-button {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.about-button:hover {
+    background-color: grey;
+}
+
+.contact-button {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: grey;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1em; /* Add a gap between projects if needed */
+}
+
+.firstproject {
+    width: calc(71% - 2em);
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 1em;
+    position: relative; /* Add this */
+}
+
+.project {
+    width: calc(23% - 2em);
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 1em;
+    position: relative; /* Add this */
+}
+
+.firstproject img {
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-bottom-left-radius: 8px; /* Add this */
+    border-bottom-right-radius: 8px; /* Add this */
+}
+.project img {
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-bottom-left-radius: 8px; /* Add this */
+    border-bottom-right-radius: 8px; /* Add this */
+}
+
+.firstproject:hover,
+.project:hover {
+    transform: scale(1.05);
+}
+
+.firstproject p,
+.project p {
+    margin: 0;
+    padding: 1em;
+}
+
+.firstproject .top-img,
+.project .top-img {
+    position: absolute; /* Add this */
+    top: 0; /* Add this */
+    left: 0; /* Add this */
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Add transition */
+}
+
+.project .bottom-img {
+    width: 100%; /* Ensure full width */
+    height: auto; /* Adjust height to auto */
+}
+
+.intro-text {
+    text-align: center;
+    margin: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.large-image {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.large-image:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: grey;
+}
+
+.horizontal-image {
+    max-width: 70%;
+    height: auto;
+    margin-top: 0px;
+}
+
+video {
+    width: 100%; /* Ensure the video takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.contact-text {
+    text-align: center;
+    margin: 2em 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.top-img {
+    opacity: 0;
+}
+
+.top-img:hover {
+    opacity: 1;
+}
